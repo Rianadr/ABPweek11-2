@@ -8,7 +8,7 @@ class page_tutorial11_1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Tutorial 11-1'),
-        automaticallyImplyLeading: false, // Remove the default back arrow
+        automaticallyImplyLeading: true, // Remove the default back arrow
       ),
       body: PageView(
         children: <Widget>[

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'tutorial11_1.dart'; // Import the new file
+import 'tutorial11_1.dart';
+import 'tutorial11_2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -59,6 +60,17 @@ class MyHomePage extends StatelessWidget {
                     );
                   },
                   child: const Text('Tutorial 11-1'),
+                ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const page_tutorial11_2()),
+                    );
+                  },
+                  child: const Text('Tutorial 11-2'),
                 ),
               ],
             ),
